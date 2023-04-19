@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+body{
+    background-image: url('/static/bg.jpg');
+    background-size: cover;
+}
+*{
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+#Heading{
+    color: black;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+#main-container{
+    display:block;
+}
+
+#Input-TextArea{
+    margin: 20px;
+    margin-top: 50px;
+    padding: 10px;
+    color: white;
+    /* background-color: #4e4c4c; */
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding-top: 20px;
+}
+
+h2{
+    position: absolute;
+    right: 230px;
+    top: 50px;
+}
+#Output-TextArea{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 87px;
+    margin-right: 20px;
+    padding: 10px;
+    padding-top: 20px;
+    border-radius: 10px;
+    border: none;
+}
+::placeholder {
+        color: white;
+      }
+
+#submit-button{
+    position: absolute;
+    right: 46%;
+    bottom: 4%;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+#submit-button:hover{
+    background-color: rgb(15, 235, 15);
+    transform: scale(1.2);
+}
+
+input[type=range]{
+    width: 300px;
+    margin-left: 20px;
+}
+
+#clear:hover{
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+}
+#clear{
+    position: absolute;
+    top: 10%; right: 1.5%; z-index: 1.1;
+    color: black; background-color: white;
+    padding: 1.5px; border: none;
+}
+

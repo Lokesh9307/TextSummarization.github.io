@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SummarizeText</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1 id="Heading"><span> TEXT SUMMARIZATION</span> </h1>
+    <form action="{{url_for('Summarize')}}" method="post" id="main-container">
+        <h3 style="font-size: 1.8rem; margin-left: 200px; position: absolute; top: 44px;">Your Text</h3>
+        <textarea name="data" id="Input-TextArea" cols="82" rows="30" placeholder="Enter the data...." required style="resize:
+        none"></textarea><br>
+        <p style="font-size: 1.2rem; margin-left: 20px;">Select Range of words</p>
+        <input type="range" max="10000" min="20" value="50" name="inputValue" id="range"><br>
+        <button type="submit" id="submit-button">Submit</button>
+        <button type="reset" id="clear" onclick="clearInput()" >Clear</button>
+    </form>
+
+    <h2 style="font-size: 1.8rem; position: absolute;">Summarize Text</h2>
+    
+    <textarea name="result" id="Output-TextArea" cols="82" rows="30" style="resize:
+    none; " >{{result}}</textarea>
+    
+</body>
+<script>
+    function clearInput() {
+      document.getElementById("Output-TextArea").value = "";
+    }
+  </script>
+</html>
